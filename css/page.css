@@ -1,0 +1,56 @@
+.page {
+    margin-top: 2.5rem;
+    padding: 1.5rem;
+    font-size: 1.13rem;
+    height: 10rem;
+}
+
+.pleft {
+    float: left;
+    width: 18rem;
+    height: 10rem;
+    background: #FFFFFF;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.10);
+    padding-top: 0.7rem;
+}
+
+.pright {
+    float: right;
+    width: 21rem;
+    height: 10rem;
+    background: #FFFFFF;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.10);
+    padding-top: 0.7rem;
+}
+
+.cardleft li{
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+.cardone img{
+    width: 0.71rem;
+    height: 0.71rem;
+}
+
+.cardleft{
+
+}
+
+.cardright li:nth-child(1){
+    margin-left: 13.25rem;
+    margin-top: 2rem;
+}
+.cardright li:nth-child(2){
+    margin-left: 12.25rem;
+    margin-top: 1.25rem;
+}
+.pagenum{
+    margin-top: 1.88rem;
+    font-size: 1.5rem;
+    width:100%;
+    display: inline;
+    white-space: nowrap;
+    overflow-x:scroll;
+    float: left;
+}

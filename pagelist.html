@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="css/index.css" rel="stylesheet">
+    <link href="css/page.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        html {
+            font-size: 21.5px;
+            background: #f5f5f5;
+        }
+
+        body {
+            background: #f5f5f5;
+            color: #475669;
+        }
+    </style>
+    <script>
+        function menu() {
+            if (document.getElementById("menu").style.display === "none") {
+                document.getElementById("lpic").src = "img/close.png";
+                document.getElementById("menu").style.display = "block";
+            } else {
+                document.getElementById("menu").style.display = "none";
+                document.getElementById("lpic").src = "img/更多.png";
+            }
+        }
+
+        function login() {
+            if (document.getElementById("login").style.display === "none") {
+                document.getElementById("login").style.display = "block";
+            } else {
+                document.getElementById("login").style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body>
+<div style="width: 100%">
+    <div class="tabbar">
+        <img id="lpic" class="more" src="img/更多.png" onclick="menu()"/>
+        <b class="logo">LOGO</b>
+        <img class="athor" src="img/athor.jpg" onclick="login()"/>
+    </div>
+    <div id="menu" style="width: 100%;height: 30.85rem;background: #262626;z-index: 5;position: absolute;display: none">
+        <ul class="menuli">
+            <li><b>首页</b></li>
+            <li>测验</li>
+            <li>简历</li>
+            <li>外包管理</li>
+            <li>电商</li>
+        </ul>
+    </div>
+
+    <div id="login"
+         style="width: 13.38rem;height: 10.75rem;background: #262626;z-index: 5;position: absolute;margin-left: 32.1rem;display: none">
+        <ul class="loginli">
+            <li><img src="img/Group%2014.png"/>&nbsp;&nbsp;个人中心</li>
+            <li><img src="img/Group%2015.png"/>&nbsp;&nbsp;退出登录</li>
+        </ul>
+    </div>
+    <div class="search">
+        <img class="icon" src="img/search.png"/>
+        <input class="sebox" placeholder="搜索">
+    </div>
+    <div class="partall" style="height: 15rem;">
+        <img class="clazz" src="img/clazz.png"/>
+        <b class="clazzfont">类别-全部</b>
+        <a class="cmore">查看更多 >></a>
+
+        <div class="serction1">
+            <img src="img/Group%2011.png"/>
+            <p>专项练习</p>
+        </div>
+        <div class="serction2" style="background: #EACD77">
+            <img src="img/Group%2013.png"/>
+            <p>公司真题</p>
+        </div>
+        <div class="serction2" style="background: #C477EA">
+            <img src="img/renwu.png"/>
+            <p>试题广场</p>
+        </div>
+        <div class="serction2" style="background: #20A0FF">
+            <img src="img/Group%2032.png"/>
+            <p>技能认证</p>
+        </div>
+        <hr class="hrr">
+
+    </div>
+    <!--题目列表-->
+    <div style="width: 100%;height: 60rem;background: white;margin-top: -2.4rem;">
+        <div class="page">
+            <div class="pleft">
+                <ul class="cardleft">
+                    <li><img src="img/时间.png" style="width: 1.04rem;height: 1.04rem;"/>&nbsp;&nbsp;120min</li>
+                    <li>367人答题</li>
+                    <li class="cardone">
+                        难度 &nbsp;&nbsp;
+                        <img src="img/黄星.png"/>
+                        <img src="img/黄星.png"/>
+                        <img src="img/黄星.png"/>
+                        <img src="img/黄星.png"/>
+                        <img src="img/线星.png"/>
+                    </li>
+                </ul>
+                <div style="width: 0.19rem;height: 5.1rem;border: 1px solid #D3DCE6;margin-left: 10.44rem;margin-top: 2.4rem;position: absolute"></div>
+                <ul class="cardright">
+                    <li><b>npm 基础</b></li>
+                    <li>
+                        <button style="border: 1px solid #20A0FF;border-radius: 6px;background: white;padding: 0.25rem 1.88rem 0.25rem 1.88rem;font-size: 1.25rem">
+                            去做题
+                        </button>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="pright">
+                <ul class="cardleft">
+                    <li><img src="img/时间.png" style="width: 1.04rem;height: 1.04rem;"/>&nbsp;&nbsp;120min</li>
+                    <li>367人答题</li>
+                    <li class="cardone">
+                        难度 &nbsp;&nbsp;
+                        <img src="img/黄星.png"/>
+                        <img src="img/黄星.png"/>
+                        <img src="img/黄星.png"/>
+                        <img src="img/黄星.png"/>
+                        <img src="img/线星.png"/>
+                    </li>
+                </ul>
+                <div style="width: 0.19rem;height: 5.1rem;border: 1px solid #D3DCE6;margin-left: 10.44rem;margin-top: 2.4rem;position: absolute"></div>
+                <ul class="cardright">
+                    <li><b>npm 基础</b></li>
+                    <li>
+                        <button style="border: 1px solid #20A0FF;border-radius: 6px;background: white;padding: 0.25rem 1.88rem 0.25rem 1.88rem;font-size: 1.25rem">
+                            去做题
+                        </button>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="page">
+            <div class="pleft">
+                <ul class="cardleft">
+                    <li><img src="img/时间.png" style="width: 1.04rem;height: 1.04rem;"/>&nbsp;&nbsp;120min</li>
+                    <li>367人答题</li>
+                    <li class="cardone">
+                        难度 &nbsp;&nbsp;
+                        <img src="img/黄星.png"/>
+                        <img src="img/黄星.png"/>
+                        <img src="img/黄星.png"/>
+                        <img src="img/黄星.png"/>
+                        <img src="img/线星.png"/>
+                    </li>
+                </ul>
+                <div style="width: 0.19rem;height: 5.1rem;border: 1px solid #D3DCE6;margin-left: 10.44rem;margin-top: 2.4rem;position: absolute"></div>
+                <ul class="cardright">
+                    <li><b>npm 基础</b></li>
+                    <li>
+                        <button style="border: 1px solid #20A0FF;border-radius: 6px;background: white;padding: 0.25rem 1.88rem 0.25rem 1.88rem;font-size: 1.25rem">
+                            去做题
+                        </button>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="pright">
+                <ul class="cardleft">
+                    <li><img src="img/时间.png" style="width: 1.04rem;height: 1.04rem;"/>&nbsp;&nbsp;120min</li>
+                    <li>367人答题</li>
+                    <li class="cardone">
+                        难度 &nbsp;&nbsp;
+                        <img src="img/黄星.png"/>
+                        <img src="img/黄星.png"/>
+                        <img src="img/黄星.png"/>
+                        <img src="img/黄星.png"/>
+                        <img src="img/线星.png"/>
+                    </li>
+                </ul>
+                <div style="width: 0.19rem;height: 5.1rem;border: 1px solid #D3DCE6;margin-left: 10.44rem;margin-top: 2.4rem;position: absolute"></div>
+                <ul class="cardright">
+                    <li><b>npm 基础</b></li>
+                    <li>
+                        <button style="border: 1px solid #20A0FF;border-radius: 6px;background: white;padding: 0.25rem 1.88rem 0.25rem 1.88rem;font-size: 1.25rem">
+                            去做题
+                        </button>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="page">
+            <div class="pleft">
+                <ul class="cardleft">
+                    <li><img src="img/时间.png" style="width: 1.04rem;height: 1.04rem;"/>&nbsp;&nbsp;120min</li>
+                    <li>367人答题</li>
+                    <li class="cardone">
+                        难度 &nbsp;&nbsp;
+                        <img src="img/黄星.png"/>
+                        <img src="img/黄星.png"/>
+                        <img src="img/黄星.png"/>
+                        <img src="img/黄星.png"/>
+                        <img src="img/线星.png"/>
+                    </li>
+                </ul>
+                <div style="width: 0.19rem;height: 5.1rem;border: 1px solid #D3DCE6;margin-left: 10.44rem;margin-top: 2.4rem;position: absolute"></div>
+                <ul class="cardright">
+                    <li><b>npm 基础</b></li>
+                    <li>
+                        <button style="border: 1px solid #20A0FF;border-radius: 6px;background: white;padding: 0.25rem 1.88rem 0.25rem 1.88rem;font-size: 1.25rem">
+                            去做题
+                        </button>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="pright">
+                <ul class="cardleft">
+                    <li><img src="img/时间.png" style="width: 1.04rem;height: 1.04rem;"/>&nbsp;&nbsp;120min</li>
+                    <li>367人答题</li>
+                    <li class="cardone">
+                        难度 &nbsp;&nbsp;
+                        <img src="img/黄星.png"/>
+                        <img src="img/黄星.png"/>
+                        <img src="img/黄星.png"/>
+                        <img src="img/黄星.png"/>
+                        <img src="img/线星.png"/>
+                    </li>
+                </ul>
+                <div style="width: 0.19rem;height: 5.1rem;border: 1px solid #D3DCE6;margin-left: 10.44rem;margin-top: 2.4rem;position: absolute"></div>
+                <ul class="cardright">
+                    <li><b>npm 基础</b></li>
+                    <li>
+                        <button style="border: 1px solid #20A0FF;border-radius: 6px;background: white;padding: 0.25rem 1.88rem 0.25rem 1.88rem;font-size: 1.25rem">
+                            去做题
+                        </button>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="page">
+            <div class="pleft">
+                <ul class="cardleft">
+                    <li><img src="img/时间.png" style="width: 1.04rem;height: 1.04rem;"/>&nbsp;&nbsp;120min</li>
+                    <li>367人答题</li>
+                    <li class="cardone">
+                        难度 &nbsp;&nbsp;
+                        <img src="img/黄星.png"/>
+                        <img src="img/黄星.png"/>
+                        <img src="img/黄星.png"/>
+                        <img src="img/黄星.png"/>
+                        <img src="img/线星.png"/>
+                    </li>
+                </ul>
+                <div style="width: 0.19rem;height: 5.1rem;border: 1px solid #D3DCE6;margin-left: 10.44rem;margin-top: 2.4rem;position: absolute"></div>
+                <ul class="cardright">
+                    <li><b>npm 基础</b></li>
+                    <li>
+                        <button style="border: 1px solid #20A0FF;border-radius: 6px;background: white;padding: 0.25rem 1.88rem 0.25rem 1.88rem;font-size: 1.25rem">
+                            去做题
+                        </button>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="pright">
+                <ul class="cardleft">
+                    <li><img src="img/时间.png" style="width: 1.04rem;height: 1.04rem;"/>&nbsp;&nbsp;120min</li>
+                    <li>367人答题</li>
+                    <li class="cardone">
+                        难度 &nbsp;&nbsp;
+                        <img src="img/黄星.png"/>
+                        <img src="img/黄星.png"/>
+                        <img src="img/黄星.png"/>
+                        <img src="img/黄星.png"/>
+                        <img src="img/线星.png"/>
+                    </li>
+                </ul>
+                <div style="width: 0.19rem;height: 5.1rem;border: 1px solid #D3DCE6;margin-left: 10.44rem;margin-top: 2.4rem;position: absolute"></div>
+                <ul class="cardright">
+                    <li><b>npm 基础</b></li>
+                    <li>
+                        <button style="border: 1px solid #20A0FF;border-radius: 6px;background: white;padding: 0.25rem 1.88rem 0.25rem 1.88rem;font-size: 1.25rem">
+                            去做题
+                        </button>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="pagenum" style="height: 4.7rem;margin-top: 3rem;background: #f5f5f5;">
+            <ul class="pagination" style="margin-left: 13.2rem;">
+                <li><a href="#">&laquo;</a></li>
+                <li class="active"><a href="#">1</a></li>
+                <li class="disabled"><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">&raquo;</a></li>
+                <span style="padding-top: 0.5rem">&nbsp;前往<input value="2"
+                               style="width: 2.25rem;height: 2.25rem;border: none;border-radius: 2px;text-align: center">页
+                </span>
+            </ul>
+        </div>
+    </div>
+    <div class="hot" style="margin-top: 0">
+        <div style="height: 25.25rem;background: #ffffff">
+            <br>
+            <br>
+            <p><img src="img/Group%2037.png" class="gang"/>&nbsp;&nbsp;&nbsp;热门点击</p>
+            <ul>
+                <li style="margin-top: 1.5rem"><span class="try"><img src="img/redone.png" class="hotpic"/>&nbsp;&nbsp;&nbsp;TestRabbit.java&nbsp;&nbsp;&nbsp;<img
+                        src="img/Group%2036.png" style="width: 0.64em;height: 0.88em;"></span></li>
+                <li style="margin-top: 1rem"><span class="try2"><img src="img/greyone.png" class="hotpic"/>&nbsp;&nbsp;&nbsp;Consecutive Numbers </span>
+                </li>
+                <li style="margin-top: 1rem"><span class="try2"><img src="img/greyone.png" class="hotpic"/>&nbsp;&nbsp;&nbsp;合并k排序列表  </span>
+                </li>
+                <li style="margin-top: 1rem"><span class="try2"><img src="img/greyone.png" class="hotpic"/>&nbsp;&nbsp;&nbsp;Find Median Given Frequency of Numbers  </span>
+                </li>
+                <li style="margin-top: 1rem"><span class="try2"><img src="img/greyone.png" class="hotpic"/>&nbsp;&nbsp;&nbsp;使用'ls'命令后，Linux系统中发生了什么？</span>
+                </li>
+                <li style="margin-top: 1rem"><span class="try2"><img src="img/greyone.png" class="hotpic"/>&nbsp;&nbsp;&nbsp;3Sum Closest </span>
+                </li>
+            </ul>
+        </div>
+        <hr class="hrr">
+        <div style="height: 25.25rem;background: #ffffff">
+            <p><img src="img/Group%2037.png" class="gang"/>&nbsp;&nbsp;&nbsp;热门题</p>
+            <ul>
+                <li style="margin-top: 1.5rem"><span class="try2"><img src="img/greyone.png" class="hotpic"/>&nbsp;&nbsp;&nbsp;TestRabbit.java</span>
+                </li>
+                <li style="margin-top: 1rem"><span class="try2"><img src="img/greyone.png" class="hotpic"/>&nbsp;&nbsp;&nbsp;Consecutive Numbers </span>
+                </li>
+                <li style="margin-top: 1rem"><span class="try2"><img src="img/greyone.png" class="hotpic"/>&nbsp;&nbsp;&nbsp;合并k排序列表  </span>
+                </li>
+                <li style="margin-top: 1rem"><span class="try2"><img src="img/greyone.png" class="hotpic"/>&nbsp;&nbsp;&nbsp;Find Median Given Frequency of Numbers  </span>
+                </li>
+                <li style="margin-top: 1rem"><span class="try2"><img src="img/greyone.png" class="hotpic"/>&nbsp;&nbsp;&nbsp;使用'ls'命令后，Linux系统中发生了什么？</span>
+                </li>
+                <li style="margin-top: 1rem"><span class="try2"><img src="img/greyone.png" class="hotpic"/>&nbsp;&nbsp;&nbsp;3Sum Closest </span>
+                </li>
+            </ul>
+        </div>
+        <button class="fmore">展开更多 ∨</button>
+        <div style="height: 34rem;background: #ffffff">
+            <p><img src="img/Group%2037.png" class="gang"/>&nbsp;&nbsp;&nbsp;热门大佬</p>
+            <li style="margin-top: 2rem"><span class="try2"><img src="img/gates.jpg" class="tx"/>&nbsp;&nbsp;&nbsp;&nbsp;Bill Gates</span>
+            </li>
+            <li style="margin-top: 1rem"><span class="try2"><img src="img/timg.jpg" class="tx"/>&nbsp;&nbsp;&nbsp;&nbsp;コナン</span>
+            </li>
+            <li style="margin-top: 1rem"><span class="try2"><img src="img/berger.jpg" class="tx"/>&nbsp;&nbsp;&nbsp;&nbsp;扎克伯格</span>
+            </li>
+            <li style="margin-top: 1rem"><span class="try2"><img src="img/vczh.jpg" class="tx"/>&nbsp;&nbsp;&nbsp;&nbsp;VCZH</span>
+            </li>
+
+            <button class="fmore" style="margin-top: 2rem">展开更多 ∨</button>
+        </div>
+    </div>
+    <div class="footer">
+        <hr class="hrr">
+        <span>友情链接</span>
+        <span>|</span>
+        <span>公司资料</span>
+        <span>|</span>
+        <span>相关产品</span>
+        <span>|</span>
+        <span>隐私及条款</span>
+        <span>|</span>
+        <span>联系我们</span>
+        <p>© Copyright 2017 北京毫末科技有限公司 </p>
+    </div>
+</div>
+</body>
+</html>
